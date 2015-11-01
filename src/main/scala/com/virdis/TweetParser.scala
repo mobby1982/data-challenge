@@ -14,7 +14,7 @@ trait TweetParser {
   def secondFeatureFormat(input: String): SecondFeature = {
     val js = Json.parse(input)
     SecondFeature(
-      (js \ "entities" \ "hashtags" \\ "text").map(_.as[String]) ,
+      (js \ "entities" \ "hashtags" \\ "text").map(_.as[String] toLowerCase) ,
       (js \ "created_at").as[DateTime]
     )
   }
