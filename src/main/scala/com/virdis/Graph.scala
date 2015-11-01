@@ -22,11 +22,11 @@ class Graph {
       The only way to manipulate internal state of this graph is by calling processData method.
    */
 
-  def processData(data: SecondFeature) = {
+  def processData(currTweet: SecondFeature) = {
 
-    if (data.hashtags.size > 1) {
+    if (currTweet.hashtags.size > 1) {
 
-      val combinationsOfTags: Iterator[Seq[String]] = data.hashtags.combinations(2) //creates all possible combinations of length 2
+      val combinationsOfTags: Iterator[Seq[String]] = currTweet.hashtags.combinations(2) //creates all possible combinations of length 2
 
       combinationsOfTags.foreach {
         tags =>
@@ -52,6 +52,8 @@ class Graph {
       adjacencyStore = adjacencyStore + ((node1, Set(node2)))
     }
   }
+
+
 
   def averageDegree: BigDecimal = {
     if (adjacencyStore.isEmpty) 0.00
