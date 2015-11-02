@@ -18,13 +18,9 @@ class Graph {
 
   var adjacencyStore = HashMap.empty[String, Set[String]]
 
-  /*
-      The only way to manipulate internal state of this graph is by calling processData method.
-   */
-
   def processData(currTweet: SecondFeature) = {
 
-    if (currTweet.hashtags.size > 1) {
+    if (currTweet.hashtags.size > 1) { // process only if more than one hashtag
       val combinationsOfTags: Iterator[Seq[String]] = currTweet.hashtags.combinations(2) //creates all possible combinations of length 2
 
       combinationsOfTags.foreach {
@@ -37,7 +33,6 @@ class Graph {
     }
 
   }
-
 
   /*
       add data if it does not exist
