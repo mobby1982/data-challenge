@@ -25,7 +25,6 @@ class Graph {
   def processData(currTweet: SecondFeature) = {
 
     if (currTweet.hashtags.size > 1) {
-
       val combinationsOfTags: Iterator[Seq[String]] = currTweet.hashtags.combinations(2) //creates all possible combinations of length 2
 
       combinationsOfTags.foreach {

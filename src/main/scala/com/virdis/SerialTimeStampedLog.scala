@@ -21,7 +21,7 @@ trait SerialTimeStampedLog {
 
    */
 
-  val serialTsLog = new mutable.LinkedHashMap[DateTime, Set[String]]()
+  private [this] val serialTsLog = new mutable.LinkedHashMap[DateTime, Set[String]]()
 
   /*
       add new data Key ( timestamp ) -> Value ( Set(hashtags) )
@@ -38,7 +38,7 @@ trait SerialTimeStampedLog {
   /*
       Check current Ts against old Ts and return a list of all Ts ( timestamps ) greater 60 seconds
    */
-  def allStaleEntries(currTweet: SecondFeature): List[DateTime] = {
+  def getStaleKeys(currTweet: SecondFeature): List[DateTime] = {
     val keysIter: Iterator[DateTime] = serialTsLog.keysIterator
     var staleKeys = List.empty[DateTime]
 
@@ -51,6 +51,19 @@ trait SerialTimeStampedLog {
     staleKeys
   }
 
+  /*
+      remove stale entries and return a set of all hashtags associated with the stale keys
+   */
+  def cleanAndReturnTags(keys: List[DateTime]): Set[String] = {
+    keys.foldLeft(Set.empty[String]){
+      (acc, a) =>
+        val tags = serialTsLog(a)
+        serialTsLog.remove(a)
+        acc ++ tags
+    }
+  }
 
-
+  override def toString = serialTsLog.toString()
 }
+
+object serialTimeStampLog extends SerialTimeStampedLog
