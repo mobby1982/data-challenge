@@ -54,7 +54,7 @@ trait SerialTimeStampedLog {
   /*
       remove stale entries and return a set of all hashtags associated with the stale keys
    */
-  def cleanAndReturnTags(keys: List[DateTime]): Set[String] = {
+  def purgeAndReturnTags(keys: List[DateTime]): Set[String] = {
     keys.foldLeft(Set.empty[String]){
       (acc, a) =>
         val tags = serialTsLog(a)
@@ -62,6 +62,10 @@ trait SerialTimeStampedLog {
         acc ++ tags
     }
   }
+
+  def size = serialTsLog.size
+
+  def allKeys: Iterator[DateTime] = serialTsLog.keysIterator
 
   override def toString = serialTsLog.toString()
 }
