@@ -2,7 +2,7 @@ package com.virdis.datachallenge
 
 import com.virdis.TweetParser
 
-object HelloWorld {
+object DataChallenge {
   def main(args: Array[String]) {
     val t1 =
       """

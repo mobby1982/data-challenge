@@ -16,12 +16,11 @@ class Graph {
          Manipulating the internal state of the graph ( add/remove ) nodes is effectively O(1)
    */
 
-  var adjacencyStore = HashMap.empty[String, Set[String]]
+  private var adjacencyStore = HashMap.empty[String, Set[String]]
 
   def processData(currTweet: SecondFeature) = {
-
     if (currTweet.hashtags.size > 1) { // process only if more than one hashtag
-      val combinationsOfTags: Iterator[Seq[String]] = currTweet.hashtags.combinations(2) //creates all possible combinations of length 2
+      val combinationsOfTags: Iterator[Seq[String]] = currTweet.hashtags.combinations(2) //creates combinations of length 2
 
       combinationsOfTags.foreach {
         tags =>
@@ -65,17 +64,22 @@ class Graph {
     }
   }
 
+  def noOfNodes = adjacencyStore.size
+
+  def sumOfDegrees: Double = {
+    var sumOfDegrees: Double = 0.00
+    val keysIter: Iterator[String] = adjacencyStore.keysIterator
+
+    while (keysIter.hasNext) {
+      sumOfDegrees = sumOfDegrees + adjacencyStore(keysIter.next()).size
+    }
+    sumOfDegrees
+  }
 
   def averageDegree: BigDecimal = {
     if (adjacencyStore.isEmpty) BigDecimal(0.00).setScale(2)
     else {
-      var sumOfDegrees: Double = 0.00
-      val keysIter: Iterator[String] = adjacencyStore.keysIterator
-
-      while (keysIter.hasNext) {
-        sumOfDegrees = sumOfDegrees + adjacencyStore(keysIter.next()).size
-      }
-      BigDecimal( sumOfDegrees / adjacencyStore.size ).setScale(2, BigDecimal.RoundingMode.HALF_UP)
+      BigDecimal( sumOfDegrees / noOfNodes ).setScale(2, BigDecimal.RoundingMode.HALF_UP)
     }
   }
 }
