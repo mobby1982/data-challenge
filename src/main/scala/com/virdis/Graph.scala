@@ -52,10 +52,27 @@ class Graph {
     }
   }
 
+  /*
+      updates the graph edges for each hashtag in the set
+
+      &~ creates the difference of 2 sets
+      val s1 = Set(1,2,3)
+      val s2 = Set(2,3,4,5,6)
+      s1 &~ s2 = Set(1)
+      
+   */
+  def updateGraph(hashTags: Set[String]) = {
+    hashTags.foreach {
+      htag =>
+        if (adjacencyStore.contains(htag)) {
+          adjacencyStore = adjacencyStore + ((htag, adjacencyStore(htag) &~ hashTags))
+        }
+    }
+  }
 
 
   def averageDegree: BigDecimal = {
-    if (adjacencyStore.isEmpty) 0.00
+    if (adjacencyStore.isEmpty) BigDecimal(0.00).setScale(2)
     else {
       var sumOfDegrees: Double = 0.00
       val keysIter: Iterator[String] = adjacencyStore.keysIterator
