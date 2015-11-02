@@ -22,7 +22,7 @@ trait TwitterHashTagGraph extends TweetParser with LoanPattern {
           graph.processData( sfData )
 
           val staleKeys = serialTimeStampLog.getStaleKeys( sfData )
-          val staleTags = serialTimeStampLog.cleanAndReturnTags( staleKeys )
+          val staleTags = serialTimeStampLog.purgeAndReturnTags( staleKeys )
 
           graph.updateGraph( staleTags )
         }
