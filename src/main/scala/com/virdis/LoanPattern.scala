@@ -18,5 +18,3 @@ trait LoanPattern {
     }
   }
 }
-
-object loanPattern extends LoanPattern
