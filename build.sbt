@@ -12,5 +12,9 @@ libraryDependencies ++= Seq(
   "com.typesafe" % "config" % "1.2.1"
 )
 
+mainClass in assembly := Some("com.virdis.datachallenge.DataChallenge")
+
+assemblyJarName in assembly := "dataChallenge.jar"
+
 initialCommands := "import com.virdis._"
 
