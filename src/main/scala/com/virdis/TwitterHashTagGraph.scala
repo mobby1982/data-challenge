@@ -16,7 +16,7 @@ trait TwitterHashTagGraph extends TweetParser with LoanPattern {
 
   def run(config: Config) = {
     using(new BufferedWriter(new OutputStreamWriter(new FileOutputStream(new File(
-        config.getString("directory.output") + FEATURE_2_OUTPUT_FILENAME))))){
+      config.getString("directory.output") + FEATURE_2_OUTPUT_FILENAME))))){
       writer =>
         using(io.Source.fromFile(config.getString("directory.input") + "tweets.txt")) {
           readerSrc =>
