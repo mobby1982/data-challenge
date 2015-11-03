@@ -2,18 +2,23 @@ package com.virdis
 
 import java.io.{OutputStreamWriter, FileOutputStream, File, BufferedWriter}
 
+import com.typesafe.config.Config
+
 /**
  * Created by sandeep on 11/1/15.
  */
 
 trait TwitterHashTagGraph extends TweetParser with LoanPattern {
 
+  val FEATURE_2_OUTPUT_FILENAME = "ft2.txt"
+
   val graph = new Graph()
 
-  def run = {
-    using(new BufferedWriter(new OutputStreamWriter(new FileOutputStream(new File("tweet_output/test.txt"))))){
+  def run(config: Config) = {
+    using(new BufferedWriter(new OutputStreamWriter(new FileOutputStream(new File(
+        config.getString("directory.output") + FEATURE_2_OUTPUT_FILENAME))))){
       writer =>
-        using( io.Source.fromFile("tweet_input/tweets.txt")) {
+        using(io.Source.fromFile(config.getString("directory.input") + "tweets.txt")) {
           readerSrc =>
             val lines: Iterator[String] = readerSrc.getLines()
             while (lines.hasNext) {
@@ -28,7 +33,6 @@ trait TwitterHashTagGraph extends TweetParser with LoanPattern {
                 writer.write(graph.averageDegree.toString())
                 writer.newLine()
               }
-
             }
         }
     }
