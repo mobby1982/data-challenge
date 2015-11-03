@@ -11,10 +11,9 @@ trait TwitterHashTagGraph extends TweetParser with LoanPattern {
   val graph = new Graph()
 
   def run = {
-    val reader = io.Source.fromFile("tweet_input/tweets.txt")
     using(new BufferedWriter(new OutputStreamWriter(new FileOutputStream(new File("tweet_output/test.txt"))))){
       writer =>
-        using(reader) {
+        using( io.Source.fromFile("tweet_input/tweets.txt")) {
           readerSrc =>
             val lines: Iterator[String] = readerSrc.getLines()
             while (lines.hasNext) {
