@@ -33,6 +33,7 @@ trait SerialTimeStampedLog {
     } else {
       serialTsLog += ((tweet.created_at, Set(tweet.hashtags: _*)))
     }
+
   }
 
   /*

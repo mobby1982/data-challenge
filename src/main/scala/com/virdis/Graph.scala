@@ -82,4 +82,6 @@ class Graph {
       BigDecimal( sumOfDegrees / noOfNodes ).setScale(2, BigDecimal.RoundingMode.HALF_UP)
     }
   }
+
+  override def toString = adjacencyStore.toString()
 }
