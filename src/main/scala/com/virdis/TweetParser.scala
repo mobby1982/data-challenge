@@ -9,7 +9,7 @@ import play.api.libs.json._
 
 import scala.util.control.NonFatal
 
-case class FirstFeature(text: String, created_at: DateTime)
+case class FirstFeature(text: String, created_at: String)
 case class SecondFeature(hashtags: Seq[String], created_at: DateTime)
 
 trait TweetParser {
@@ -22,8 +22,9 @@ trait TweetParser {
   def secondFeatureFormat(input: String): Option[SecondFeature] = {
     try {
       val js = Json.parse(input)
+      val hashtags = (js \ "entities" \ "hashtags" \\ "text").map(_.as[String] toLowerCase)
       Option(SecondFeature(
-        (js \ "entities" \ "hashtags" \\ "text").map(_.as[String] toLowerCase),
+        hashtags.map(tweetCleaner.cleanAndProcessInput(_)),
         (js \ "created_at").as[DateTime]
       ))
     } catch {
@@ -36,9 +37,10 @@ trait TweetParser {
   def firstFeatureFormat(input: String): Option[FirstFeature] = {
     try {
       val js = Json.parse(input)
+      val txt = (js \ "text").as[String]
       Option(FirstFeature(
-        (js \ "text").as[String],
-        (js \ "created_at").as[DateTime]
+        tweetCleaner.cleanAndProcessInput(txt),
+        (js \ "created_at").as[String]
       ))
     } catch {
       case NonFatal(e)  => {
@@ -46,6 +48,7 @@ trait TweetParser {
       }
     }
   }
+
 }
 
 object tweetParser extends TweetParser
