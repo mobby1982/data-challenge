@@ -78,14 +78,14 @@ class TweetParserSpec extends MySpec {
 
   "TweetParser" should "parse tweets" in {
     val f = fixture
-    val sf = tweetParser.secondFeatureFormat(f.tweetWithHTags)
+    val sf = tweetParser.secondFeatureFormat(f.tweetWithHTags).get
     sf.hashtags.toSet should be === Set("pumpkin", "happyfriday", "HappyHalloween".toLowerCase(), "Halloween".toLowerCase())
     sf.created_at shouldBe a [DateTime]
   }
 
   it should "parse tweets with empty hashtags" in {
     val f = fixture
-    val sf = tweetParser.secondFeatureFormat( f.tweetWithNoTags )
+    val sf = tweetParser.secondFeatureFormat( f.tweetWithNoTags ).get
     sf.hashtags should have size 0
   }
 }

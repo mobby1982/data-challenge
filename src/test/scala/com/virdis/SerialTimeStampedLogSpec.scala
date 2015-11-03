@@ -88,7 +88,7 @@ class SerialTimeStampedLogSpec extends MySpec {
     f.tsLog.add(sf5)
     val staleKeys  = f.tsLog.getStaleKeys(sf5)
     val htags      = f.tsLog.purgeAndReturnTags(staleKeys)
-    
+
     htags should contain theSameElementsAs(sf1.hashtags)
     f.tsLog.size should be(4)
   }
