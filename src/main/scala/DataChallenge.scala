@@ -1,7 +1,7 @@
 package com.virdis.datachallenge
 
 import com.typesafe.config.{ConfigFactory, Config}
-import com.virdis.TwitterHashTagGraph
+import com.virdis.{UnicodeTweetCounter, TwitterHashTagGraph}
 
 
 object DataChallenge {
@@ -18,6 +18,8 @@ object DataChallenge {
 
   def start(config: Config) = {
     object twitterGraph extends TwitterHashTagGraph
+    object unicodeCounter extends UnicodeTweetCounter
+    unicodeCounter.run(config)
     twitterGraph.run(config)
   }
 }
