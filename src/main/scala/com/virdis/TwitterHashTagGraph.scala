@@ -3,12 +3,12 @@ package com.virdis
 import java.io.{OutputStreamWriter, FileOutputStream, File, BufferedWriter}
 
 import com.typesafe.config.Config
-
+import tweetParser._
 /**
  * Created by sandeep on 11/1/15.
  */
 
-trait TwitterHashTagGraph extends TweetParser with LoanPattern {
+trait TwitterHashTagGraph extends LoanPattern {
 
   val FEATURE_2_OUTPUT_FILENAME = "ft2.txt"
 
