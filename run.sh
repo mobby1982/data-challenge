@@ -26,7 +26,6 @@ if [[ "$_java" ]]; then
 fi
 RUN_OPTS="-Xms512M -Xmx1536M -Xss1M -XX:MaxPermSize=256M"
 if [ "$flag" = true ]; then
-  echo "lets run the app....."
-  java $RUN_OPTS -jar  target/scala-2.11/dataChallenge.jar
-  echo "done!"
+  sbt clean compile
+  sbt run 
 fi
