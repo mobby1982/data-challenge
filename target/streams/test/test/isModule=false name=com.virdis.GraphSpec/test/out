@@ -1,6 +1,0 @@
-[0m[[0minfo[0m] [0m[32mGraphSpec:[0m[0m
-[0m[[0minfo[0m] [0m[32mA Graph[0m[0m
-[0m[[0minfo[0m] [0m[32m- should process tweet data[0m[0m
-[0m[[0minfo[0m] [0m[32m- should process incomplete data properly[0m[0m
-[0m[[0minfo[0m] [0m[32m- should maintain averageDegree[0m[0m
-[0m[[0minfo[0m] [0m[32m- should remove nodes and update the graph[0m[0m

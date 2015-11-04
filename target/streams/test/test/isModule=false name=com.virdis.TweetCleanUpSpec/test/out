@@ -1,5 +1,0 @@
-[0m[[0minfo[0m] [0m[32mTweetCleanUpSpec:[0m[0m
-[0m[[0minfo[0m] [0m[32mTweetCleanUp[0m[0m
-[0m[[0minfo[0m] [0m[32m- should should remove unicode character[0m[0m
-[0m[[0minfo[0m] [0m[32m- should handle ascii characters correctly[0m[0m
-[0m[[0minfo[0m] [0m[32m- should check for unicode characters[0m[0m

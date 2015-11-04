@@ -1,7 +1,0 @@
-[0m[[0minfo[0m] [0m[32mSerialTimeStampedLogSpec:[0m[0m
-[0m[[0minfo[0m] [0m[32mSerialTimeStampedLog[0m[0m
-[0m[[0minfo[0m] [0m[32m- should add parsed tweets data[0m[0m
-[0m[[0minfo[0m] [0m[32m- should maintain insertion order while traversing all keys[0m[0m
-[0m[[0minfo[0m] [0m[32m- should handle duplicate data for a key[0m[0m
-[0m[[0minfo[0m] [0m[32m- should return stale keys, for timestamps greater than 60 seconds compared to timestamp of current tweet being processed[0m[0m
-[0m[[0minfo[0m] [0m[32m- should purge all stale keys/data and return hashtags associated with stale keys[0m[0m
