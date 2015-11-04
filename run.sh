@@ -24,7 +24,8 @@ if [[ "$_java" ]]; then
     echo JVM 1.6 / JVM 1.7 is required to run this application !!!!!
   fi
 fi
-
+RUN_OPTS="-Xms512M -Xmx1536M -Xss1M -XX:MaxPermSize=256M"
 if [ "$flag" = true ]; then
-  echo "proceed to run the app"
+  echo "lets run the app....."
+  java $RUN_OPTS -jar  target/scala-2.11/dataChallenge.jar
 fi
