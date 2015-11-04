@@ -6,7 +6,7 @@ Java 1.6 - Java 1.7 (required) **Do not use Java 1.8**
 
 ## Run.sh 
 
-**Give proper permissions to run.sh.**  
+**Give proper permissions to run.sh. (u+x) **  
 
 **Once run.sh starts executing it will:**
 
