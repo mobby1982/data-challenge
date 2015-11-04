@@ -24,8 +24,9 @@ if [[ "$_java" ]]; then
     echo JVM 1.6 / JVM 1.7 is required to run this application !!!!!
   fi
 fi
-RUN_OPTS="-Xms512M -Xmx1536M -Xss1M -XX:MaxPermSize=256M"
+
 if [ "$flag" = true ]; then
-  sbt clean compile test
-  sbt run 
+  chmod 0755 sbt
+  sh ./sbt clean compile test
+  sh ./sbt run 
 fi
