@@ -1,6 +1,6 @@
 *.class
 *.log
-
+tweet_output/*
 # sbt specific
 .cache
 .history
