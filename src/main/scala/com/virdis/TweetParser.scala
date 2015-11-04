@@ -9,6 +9,7 @@ import play.api.libs.json._
 
 import scala.util.control.NonFatal
 
+
 case class FirstFeature(text: String, created_at: String)
 case class SecondFeature(hashtags: Seq[String], created_at: DateTime)
 
