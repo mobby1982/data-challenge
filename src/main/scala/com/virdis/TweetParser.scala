@@ -16,16 +16,28 @@ case class SecondFeature(hashtags: Seq[String], created_at: DateTime)
 trait TweetParser {
 
   /*
-      We only care about tweet data in correct format,
+      For both features we only care about tweet data in correct format,
       if the data is in incorrect format,
       after catching Parsing Exception we do nothing
    */
+
   def secondFeatureFormat(input: String): Option[SecondFeature] = {
     try {
       val js = Json.parse(input)
+
+      /*
+          all tags are converted to lowercase
+          all unciode characters, empty tags and duplicates are removed
+       */
       val hashtags = (js \ "entities" \ "hashtags" \\ "text").map(_.as[String] toLowerCase)
+      val cleanedTags = hashtags.foldLeft(Set.empty[String]) {
+        (b, a) =>
+          val s = tweetCleaner.cleanAndProcessInput(a)
+          if (s.nonEmpty) b + s else b
+      }.toSeq
+
       Option(SecondFeature(
-        hashtags.map(tweetCleaner.cleanAndProcessInput(_)),
+        cleanedTags,
         (js \ "created_at").as[DateTime]
       ))
     } catch {
