@@ -26,6 +26,6 @@ if [[ "$_java" ]]; then
 fi
 RUN_OPTS="-Xms512M -Xmx1536M -Xss1M -XX:MaxPermSize=256M"
 if [ "$flag" = true ]; then
-  sbt clean compile
+  sbt clean compile test
   sbt run 
 fi
