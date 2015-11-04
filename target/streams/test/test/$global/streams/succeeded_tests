@@ -1,0 +1,6 @@
+#Successful Tests
+#Tue Nov 03 17:05:03 PST 2015
+com.virdis.SerialTimeStampedLogSpec=1446599103029
+com.virdis.GraphSpec=1446599102933
+com.virdis.TweetCleanUpSpec=1446599102922
+com.virdis.TweetParserSpec=1446599103093

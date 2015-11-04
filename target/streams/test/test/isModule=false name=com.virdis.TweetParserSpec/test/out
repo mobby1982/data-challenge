@@ -1,0 +1,5 @@
+[0m[[0minfo[0m] [0m[32mTweetParserSpec:[0m[0m
+[0m[[0minfo[0m] [0m[32mTweetParser[0m[0m
+[0m[[0minfo[0m] [0m[32m- should parse tweets[0m[0m
+[0m[[0minfo[0m] [0m[32m- should parse tweets with empty hashtags[0m[0m
+[0m[[0minfo[0m] [0m[32m- should parse tweets in first feature format[0m[0m

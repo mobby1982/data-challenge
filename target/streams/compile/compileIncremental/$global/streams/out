@@ -1,0 +1,119 @@
+[0m[[0mdebug[0m] [0m[0m
+[0m[[0mdebug[0m] [0mInitial source changes: [0m
+[0m[[0mdebug[0m] [0m	removed:Set()[0m
+[0m[[0mdebug[0m] [0m	added: Set(/home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/UnicodeTweetCounter.scala, /home/sandeep/Source/scala/data-challenge/src/main/scala/DataChallenge.scala, /home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/LoanPattern.scala, /home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/SerialTimeStampedLog.scala, /home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/TweetCleanUp.scala, /home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/TwitterHashTagGraph.scala, /home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/Graph.scala, /home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/TweetParser.scala, /home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/package.scala)[0m
+[0m[[0mdebug[0m] [0m	modified: Set()[0m
+[0m[[0mdebug[0m] [0mRemoved products: Set()[0m
+[0m[[0mdebug[0m] [0mExternal API changes: API Changes: Set()[0m
+[0m[[0mdebug[0m] [0mModified binary dependencies: Set()[0m
+[0m[[0mdebug[0m] [0mInitial directly invalidated sources: Set(/home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/UnicodeTweetCounter.scala, /home/sandeep/Source/scala/data-challenge/src/main/scala/DataChallenge.scala, /home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/LoanPattern.scala, /home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/SerialTimeStampedLog.scala, /home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/TweetCleanUp.scala, /home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/TwitterHashTagGraph.scala, /home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/Graph.scala, /home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/TweetParser.scala, /home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/package.scala)[0m
+[0m[[0mdebug[0m] [0m[0m
+[0m[[0mdebug[0m] [0mSources indirectly invalidated by:[0m
+[0m[[0mdebug[0m] [0m	product: Set()[0m
+[0m[[0mdebug[0m] [0m	binary dep: Set()[0m
+[0m[[0mdebug[0m] [0m	external source: Set()[0m
+[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(/home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/UnicodeTweetCounter.scala, /home/sandeep/Source/scala/data-challenge/src/main/scala/DataChallenge.scala, /home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/LoanPattern.scala, /home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/SerialTimeStampedLog.scala, /home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/TweetCleanUp.scala, /home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/TwitterHashTagGraph.scala, /home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/Graph.scala, /home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/TweetParser.scala, /home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/package.scala)[0m
+[0m[[0mdebug[0m] [0mRecompiling all 9 sources: invalidated sources (9) exceeded 50.0% of all sources[0m
+[0m[[0minfo[0m] [0mCompiling 9 Scala sources to /home/sandeep/Source/scala/data-challenge/target/scala-2.11/classes...[0m
+[0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.11.7[0m
+[0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.11.7[0m
+[0m[[0mdebug[0m] [0mRunning cached compiler 1ff45d89, interfacing (CompilerInterface) with Scala compiler version 2.11.7[0m
+[0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
+[0m[[0mdebug[0m] [0m	-bootclasspath[0m
+[0m[[0mdebug[0m] [0m	/home/sandeep/SDKs/jdk1.7.0_80/jre/lib/resources.jar:/home/sandeep/SDKs/jdk1.7.0_80/jre/lib/rt.jar:/home/sandeep/SDKs/jdk1.7.0_80/jre/lib/sunrsasign.jar:/home/sandeep/SDKs/jdk1.7.0_80/jre/lib/jsse.jar:/home/sandeep/SDKs/jdk1.7.0_80/jre/lib/jce.jar:/home/sandeep/SDKs/jdk1.7.0_80/jre/lib/charsets.jar:/home/sandeep/SDKs/jdk1.7.0_80/jre/lib/jfr.jar:/home/sandeep/SDKs/jdk1.7.0_80/jre/classes:/home/sandeep/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar[0m
+[0m[[0mdebug[0m] [0m	-classpath[0m
+[0m[[0mdebug[0m] [0m	/home/sandeep/Source/scala/data-challenge/target/scala-2.11/classes:/home/sandeep/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.3.10.jar:/home/sandeep/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.3.10.jar:/home/sandeep/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/home/sandeep/.ivy2/cache/com.typesafe/config/bundles/config-1.2.1.jar:/home/sandeep/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.3.10.jar:/home/sandeep/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.3.10.jar:/home/sandeep/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.3.jar:/home/sandeep/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.6.jar:/home/sandeep/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.3.2.jar:/home/sandeep/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.3.2.jar:/home/sandeep/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.3.2.jar:/home/sandeep/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.1.jar[0m
+[0m[[33mwarn[0m] [0mthere were two feature warnings; re-run with -feature for details[0m
+[0m[[33mwarn[0m] [0mone warning found[0m
+[0m[[0mdebug[0m] [0mScala compilation took 6.933695315 s[0m
+[0m[[0mdebug[0m] [0mInvalidating /home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/UnicodeTweetCounter.scala...[0m
+[0m[[0mdebug[0m] [0mInvalidating (transitively) by inheritance from /home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/UnicodeTweetCounter.scala...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/UnicodeTweetCounter.scala)[0m
+[0m[[0mdebug[0m] [0mIncluding /home/sandeep/Source/scala/data-challenge/src/main/scala/DataChallenge.scala by /home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/UnicodeTweetCounter.scala[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive inheritance dependency: Set(/home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/UnicodeTweetCounter.scala, /home/sandeep/Source/scala/data-challenge/src/main/scala/DataChallenge.scala)[0m
+[0m[[0mdebug[0m] [0mThe /home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/UnicodeTweetCounter.scala source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m	notify, wait, $asInstanceOf, using, equals, asInstanceOf, run, synchronized, $isInstanceOf, FEATURE_1_OUTPUT_FILENAME, notifyAll, isInstanceOf, ==, clone, $init$, counter, toString, !=, getClass, UnicodeTweetCounter, close, ne, Closeable, eq, ##, finalize, hashCode.[0m
+[0m[[0mdebug[0m] [0mAll member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0mThe following modified names cause invalidation of /home/sandeep/Source/scala/data-challenge/src/main/scala/DataChallenge.scala: Set(equals, run, UnicodeTweetCounter)[0m
+[0m[[0mdebug[0m] [0mInvalidating /home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/LoanPattern.scala...[0m
+[0m[[0mdebug[0m] [0mInvalidating (transitively) by inheritance from /home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/LoanPattern.scala...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/LoanPattern.scala)[0m
+[0m[[0mdebug[0m] [0mIncluding /home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/UnicodeTweetCounter.scala by /home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/LoanPattern.scala[0m
+[0m[[0mdebug[0m] [0mIncluding /home/sandeep/Source/scala/data-challenge/src/main/scala/DataChallenge.scala by /home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/UnicodeTweetCounter.scala[0m
+[0m[[0mdebug[0m] [0mIncluding /home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/TwitterHashTagGraph.scala by /home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/LoanPattern.scala[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive inheritance dependency: Set(/home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/LoanPattern.scala, /home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/UnicodeTweetCounter.scala, /home/sandeep/Source/scala/data-challenge/src/main/scala/DataChallenge.scala, /home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/TwitterHashTagGraph.scala)[0m
+[0m[[0mdebug[0m] [0mThe /home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/LoanPattern.scala source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m	notify, wait, $asInstanceOf, using, equals, asInstanceOf, synchronized, $isInstanceOf, LoanPattern, notifyAll, isInstanceOf, ==, clone, $init$, toString, !=, getClass, close, ne, Closeable, eq, ##, finalize, hashCode.[0m
+[0m[[0mdebug[0m] [0mAll member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0mThe following modified names cause invalidation of /home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/UnicodeTweetCounter.scala: Set(using, LoanPattern, toString)[0m
+[0m[[0mdebug[0m] [0mThe following modified names cause invalidation of /home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/TwitterHashTagGraph.scala: Set(using, LoanPattern, toString)[0m
+[0m[[0mdebug[0m] [0mThe following modified names cause invalidation of /home/sandeep/Source/scala/data-challenge/src/main/scala/DataChallenge.scala: Set(equals)[0m
+[0m[[0mdebug[0m] [0mThe following modified names cause invalidation of /home/sandeep/Source/scala/data-challenge/src/main/scala/DataChallenge.scala: Set(equals)[0m
+[0m[[0mdebug[0m] [0mInvalidating /home/sandeep/Source/scala/data-challenge/src/main/scala/DataChallenge.scala...[0m
+[0m[[0mdebug[0m] [0mInvalidating (transitively) by inheritance from /home/sandeep/Source/scala/data-challenge/src/main/scala/DataChallenge.scala...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/home/sandeep/Source/scala/data-challenge/src/main/scala/DataChallenge.scala)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive inheritance dependency: Set(/home/sandeep/Source/scala/data-challenge/src/main/scala/DataChallenge.scala)[0m
+[0m[[0mdebug[0m] [0mThe /home/sandeep/Source/scala/data-challenge/src/main/scala/DataChallenge.scala source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m	notify, wait, $asInstanceOf, equals, asInstanceOf, DataChallenge, synchronized, $isInstanceOf, main, notifyAll, isInstanceOf, ==, clone, toString, !=, getClass, start, ne, eq, ##, finalize, hashCode.[0m
+[0m[[0mdebug[0m] [0mAll member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0mInvalidating /home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/Graph.scala...[0m
+[0m[[0mdebug[0m] [0mInvalidating (transitively) by inheritance from /home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/Graph.scala...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/Graph.scala)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive inheritance dependency: Set(/home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/Graph.scala)[0m
+[0m[[0mdebug[0m] [0mThe /home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/Graph.scala source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m	notify, wait, $asInstanceOf, averageDegree, equals, asInstanceOf, Graph, noOfNodes, synchronized, $isInstanceOf, sumOfDegrees, notifyAll, isInstanceOf, adjacencyStore, <init>, addEdge, processData, ==, clone, updateGraph, toString, !=, getClass, ne, eq, ##, finalize, hashCode.[0m
+[0m[[0mdebug[0m] [0mAll member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0mThe following modified names cause invalidation of /home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/TwitterHashTagGraph.scala: Set(averageDegree, Graph, <init>, processData, updateGraph, toString)[0m
+[0m[[0mdebug[0m] [0mInvalidating /home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/TwitterHashTagGraph.scala...[0m
+[0m[[0mdebug[0m] [0mInvalidating (transitively) by inheritance from /home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/TwitterHashTagGraph.scala...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/TwitterHashTagGraph.scala)[0m
+[0m[[0mdebug[0m] [0mIncluding /home/sandeep/Source/scala/data-challenge/src/main/scala/DataChallenge.scala by /home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/TwitterHashTagGraph.scala[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive inheritance dependency: Set(/home/sandeep/Source/scala/data-challenge/src/main/scala/DataChallenge.scala, /home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/TwitterHashTagGraph.scala)[0m
+[0m[[0mdebug[0m] [0mThe /home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/TwitterHashTagGraph.scala source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m	notify, wait, $asInstanceOf, using, equals, asInstanceOf, run, TwitterHashTagGraph, FEATURE_2_OUTPUT_FILENAME, synchronized, $isInstanceOf, notifyAll, isInstanceOf, ==, clone, $init$, toString, graph, !=, getClass, close, ne, Closeable, eq, ##, finalize, hashCode.[0m
+[0m[[0mdebug[0m] [0mAll member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0mThe following modified names cause invalidation of /home/sandeep/Source/scala/data-challenge/src/main/scala/DataChallenge.scala: Set(equals, run, TwitterHashTagGraph)[0m
+[0m[[0mdebug[0m] [0mInvalidating /home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/package.scala...[0m
+[0m[[0mdebug[0m] [0mInvalidating (transitively) by inheritance from /home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/package.scala...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/package.scala)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive inheritance dependency: Set(/home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/package.scala)[0m
+[0m[[0mdebug[0m] [0mThe /home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/package.scala source file has the following implicit definitions changed:[0m
+[0m[[0mdebug[0m] [0m	readsJodaDateTime.[0m
+[0m[[0mdebug[0m] [0mAll member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0mThe following member ref dependencies of /home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/package.scala are invalidated:[0m
+[0m[[0mdebug[0m] [0m	/home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/SerialTimeStampedLog.scala[0m
+[0m[[0mdebug[0m] [0m	/home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/TweetParser.scala[0m
+[0m[[0mdebug[0m] [0mInvalidating /home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/TweetParser.scala...[0m
+[0m[[0mdebug[0m] [0mInvalidating (transitively) by inheritance from /home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/TweetParser.scala...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/TweetParser.scala)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive inheritance dependency: Set(/home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/TweetParser.scala)[0m
+[0m[[0mdebug[0m] [0mThe /home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/TweetParser.scala source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m	notify, wait, copy$default$2, $asInstanceOf, productArity, equals, asInstanceOf, synchronized, $isInstanceOf, text, canEqual, productPrefix, notifyAll, isInstanceOf, FirstFeature, <init>, ==, clone, tweetParser, $init$, copy, secondFeatureFormat, created_at, toString, TweetParser, !=, firstFeatureFormat, getClass, copy$default$1, ne, eq, productIterator, ##, finalize, productElement, hashCode, hashtags, SecondFeature.[0m
+[0m[[0mdebug[0m] [0mAll member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0mThe following modified names cause invalidation of /home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/Graph.scala: Set(<init>, toString, hashtags, SecondFeature)[0m
+[0m[[0mdebug[0m] [0mThe following modified names cause invalidation of /home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/UnicodeTweetCounter.scala: Set(text, FirstFeature, <init>, tweetParser, created_at, toString, firstFeatureFormat)[0m
+[0m[[0mdebug[0m] [0mThe following modified names cause invalidation of /home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/SerialTimeStampedLog.scala: Set(<init>, created_at, toString, hashtags, SecondFeature)[0m
+[0m[[0mdebug[0m] [0mThe following modified names cause invalidation of /home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/TwitterHashTagGraph.scala: Set(<init>, tweetParser, secondFeatureFormat, toString, SecondFeature)[0m
+[0m[[0mdebug[0m] [0mInvalidating /home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/TweetCleanUp.scala...[0m
+[0m[[0mdebug[0m] [0mInvalidating (transitively) by inheritance from /home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/TweetCleanUp.scala...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/TweetCleanUp.scala)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive inheritance dependency: Set(/home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/TweetCleanUp.scala)[0m
+[0m[[0mdebug[0m] [0mThe /home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/TweetCleanUp.scala source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m	newLineOrTab, notify, wait, $asInstanceOf, checkNonAsciiCharacters, cleanAndProcessInput, equals, backSlash, asInstanceOf, synchronized, $isInstanceOf, notifyAll, isInstanceOf, ==, TweetCleanUp, clone, p, $init$, toString, nonAscii, !=, getClass, unicodeCharacterCount, ne, eq, tweetCleaner, ##, finalize, hashCode, unicodeCounter.[0m
+[0m[[0mdebug[0m] [0mAll member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0mThe following modified names cause invalidation of /home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/UnicodeTweetCounter.scala: Set(toString, unicodeCharacterCount, tweetCleaner)[0m
+[0m[[0mdebug[0m] [0mThe following modified names cause invalidation of /home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/TweetParser.scala: Set(cleanAndProcessInput, asInstanceOf, isInstanceOf, ==, toString, eq, tweetCleaner)[0m
+[0m[[0mdebug[0m] [0mInvalidating /home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/SerialTimeStampedLog.scala...[0m
+[0m[[0mdebug[0m] [0mInvalidating (transitively) by inheritance from /home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/SerialTimeStampedLog.scala...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/SerialTimeStampedLog.scala)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive inheritance dependency: Set(/home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/SerialTimeStampedLog.scala)[0m
+[0m[[0mdebug[0m] [0mThe /home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/SerialTimeStampedLog.scala source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m	SerialTimeStampedLog, notify, serialTsLog, getStaleKeys, wait, $asInstanceOf, size, allKeys, equals, asInstanceOf, synchronized, $isInstanceOf, notifyAll, isInstanceOf, purgeAndReturnTags, ==, clone, $init$, toString, !=, getClass, ne, serialTimeStampLog, add, eq, ##, finalize, hashCode.[0m
+[0m[[0mdebug[0m] [0mAll member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0mThe following modified names cause invalidation of /home/sandeep/Source/scala/data-challenge/src/main/scala/com/virdis/TwitterHashTagGraph.scala: Set(getStaleKeys, purgeAndReturnTags, toString, serialTimeStampLog, add)[0m
+[0m[[0mdebug[0m] [0mNew invalidations:[0m
+[0m[[0mdebug[0m] [0m	Set()[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set()[0m
+[0m[[0mdebug[0m] [0mPreviously invalidated, but (transitively) depend on new invalidations:[0m
+[0m[[0mdebug[0m] [0m	Set()[0m
+[0m[[0mdebug[0m] [0mAll newly invalidated sources after taking into account (previously) recompiled sources:Set()[0m
