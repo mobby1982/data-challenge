@@ -6,7 +6,7 @@ import com.virdis.{UnicodeTweetCounter, TwitterHashTagGraph}
 
 object DataChallenge {
   def main(args: Array[String]) {
-    println("Main Started......")
+    println("Main Challenge Started......")
     if (args.isEmpty) {
       start(ConfigFactory.load("application.conf"))
     } else if (args(0).equals("test")) {

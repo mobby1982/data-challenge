@@ -12,4 +12,4 @@ Java 1.6 - Java 1.7 (required) **Do not use Java 1.8**
 
 1. Download dependencies
 2. **clean, compile** the project **run** the tests and then,
-3. **run the main challenege** which will generate **solution files** in the tweet_output folder
+3. **runs the main challenege** which will generate **solution files** in the tweet_output folder
