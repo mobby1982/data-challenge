@@ -35,6 +35,7 @@ trait UnicodeTweetCounter extends LoanPattern {
               }
             }
         }
+        writer.newLine()
         writer.write("" + unicodeCharacterCount + " tweets contained unicode.")
     }
   }
