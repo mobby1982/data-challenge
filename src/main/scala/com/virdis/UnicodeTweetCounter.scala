@@ -3,7 +3,7 @@ package com.virdis
 import java.io.{File, FileOutputStream, OutputStreamWriter, BufferedWriter}
 
 import com.typesafe.config.Config
-import tweetParser._
+import tweetDataParser._
 import tweetCleaner._
 /**
   * Created by sandeep on 11/3/15.

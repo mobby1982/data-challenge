@@ -52,4 +52,4 @@ trait TweetParser {
 
 }
 
-object tweetParser extends TweetParser
+object tweetDataParser extends TweetParser
