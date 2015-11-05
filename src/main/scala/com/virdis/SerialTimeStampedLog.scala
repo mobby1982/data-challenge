@@ -59,7 +59,7 @@ trait SerialTimeStampedLog {
     keys.foldLeft(Set.empty[String]){
       (acc, a) =>
         val tags = serialTsLog(a)
-        serialTsLog.remove(a)
+        serialTsLog -= a
         acc ++ tags
     }
   }
