@@ -61,7 +61,7 @@ class Graph {
         if (adjacencyStore.contains(htag)) {
           val setDiff: Set[String] = adjacencyStore(htag) &~ hashTags
           if (setDiff.isEmpty) {
-            adjacencyStore = adjacencyStore - htag
+            adjacencyStore = adjacencyStore - htag // remove unconnected nodes
           } else {
             adjacencyStore = adjacencyStore + ((htag, setDiff))
           }
