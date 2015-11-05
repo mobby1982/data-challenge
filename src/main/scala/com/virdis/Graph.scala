@@ -59,7 +59,12 @@ class Graph {
     hashTags.foreach {
       htag =>
         if (adjacencyStore.contains(htag)) {
-          adjacencyStore = adjacencyStore + ((htag, adjacencyStore(htag) &~ hashTags))
+          val setDiff: Set[String] = adjacencyStore(htag) &~ hashTags
+          if (setDiff.isEmpty) {
+            adjacencyStore = adjacencyStore - htag
+          } else {
+            adjacencyStore = adjacencyStore + ((htag, setDiff))
+          }
         }
     }
   }
