@@ -8,7 +8,7 @@ import java.util.regex.Pattern
 trait TweetCleanUp {
 
   val nonAscii = "[^\\p{ASCII}]+"
-  val newLineOrTab = "\\n|\\t"
+  val newLineOrTab = "\\\n|\\\t"
   val backSlash = "\\\\"
 
   val p = Pattern.compile(nonAscii)
@@ -29,7 +29,9 @@ trait TweetCleanUp {
     if (checkNonAsciiCharacters(input)) {
       unicodeCounter = unicodeCounter + 1
       input.replaceAll(newLineOrTab, " ").replaceAll(nonAscii + "|" + backSlash, "")
-    } else input
+    } else {
+      input.replaceAll(newLineOrTab, " ").replaceAll(backSlash, "")
+    }
   }
 
   def unicodeCharacterCount = unicodeCounter
